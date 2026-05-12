@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ecuglfhf2cm6"]
+
+[ext_resource type="Script" uid="uid://df2ow71pevv2g" path="res://scripts/level.gd" id="1_2q6dc"]
+[ext_resource type="PackedScene" uid="uid://cxvgwy4p7jnio" path="res://scenes/hitZones.tscn" id="2_w7c3h"]
+[ext_resource type="PackedScene" uid="uid://k2oj1ui7wofa" path="res://scenes/noteSpawner.tscn" id="3_w8frs"]
+
+[node name="level" type="Node2D" unique_id=1522307892]
+script = ExtResource("1_2q6dc")
+
+[node name="HitZones" parent="." unique_id=1552270386 instance=ExtResource("2_w7c3h")]
+
+[node name="NoteSpawner" parent="." unique_id=1503950154 instance=ExtResource("3_w8frs")]
+position = Vector2(215, 158)

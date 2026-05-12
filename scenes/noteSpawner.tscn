@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://k2oj1ui7wofa"]
+
+[ext_resource type="Script" uid="uid://n6r7esdlusbd" path="res://scripts/note_spawner.gd" id="1_4s5ki"]
+[ext_resource type="PackedScene" uid="uid://5y24benh4njx" path="res://scenes/note.tscn" id="2_xh8t2"]
+
+[node name="NoteSpawner" type="Node2D" unique_id=1503950154]
+script = ExtResource("1_4s5ki")
+noteScene = ExtResource("2_xh8t2")
+
+[node name="spawnTimer" type="Timer" parent="." unique_id=1901977499]
+one_shot = true

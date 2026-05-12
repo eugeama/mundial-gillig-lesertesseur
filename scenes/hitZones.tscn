@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cxvgwy4p7jnio"]
+
+[ext_resource type="Script" uid="uid://c2nry8r1b1qx8" path="res://scripts/hit_zones.gd" id="1_1wc37"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ms6gx"]
+size = Vector2(103, 106.5)
+
+[node name="HitZones" type="Node2D" unique_id=1552270386]
+script = ExtResource("1_1wc37")
+
+[node name="d" type="Area2D" parent="." unique_id=1491739062]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="d" unique_id=650178491]
+position = Vector2(200.5, 592.25)
+shape = SubResource("RectangleShape2D_ms6gx")
+
+[node name="f" type="Area2D" parent="." unique_id=896991094]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="f" unique_id=2057867157]
+position = Vector2(443, 599)
+shape = SubResource("RectangleShape2D_ms6gx")
+
+[node name="j" type="Area2D" parent="." unique_id=2001350832]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="j" unique_id=1891231396]
+position = Vector2(679, 594)
+shape = SubResource("RectangleShape2D_ms6gx")
+
+[node name="k" type="Area2D" parent="." unique_id=71262950]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="k" unique_id=2095681526]
+position = Vector2(929, 601)
+shape = SubResource("RectangleShape2D_ms6gx")
