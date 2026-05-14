@@ -14,6 +14,13 @@ script = ExtResource("1_1wc37")
 position = Vector2(200.5, 592.25)
 shape = SubResource("RectangleShape2D_ms6gx")
 
+[node name="ColorRect" type="ColorRect" parent="d" unique_id=1906386871]
+offset_left = 148.0
+offset_top = 542.0
+offset_right = 252.0
+offset_bottom = 645.0
+metadata/_edit_use_anchors_ = true
+
 [node name="f" type="Area2D" parent="." unique_id=896991094]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="f" unique_id=2057867157]
@@ -31,3 +38,22 @@ shape = SubResource("RectangleShape2D_ms6gx")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="k" unique_id=2095681526]
 position = Vector2(929, 601)
 shape = SubResource("RectangleShape2D_ms6gx")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=904285115]
+offset_left = 390.0
+offset_top = 546.0
+offset_right = 494.0
+offset_bottom = 649.0
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=975763490]
+offset_left = 624.0
+offset_top = 542.0
+offset_right = 728.0
+offset_bottom = 645.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=43131638]
+offset_left = 884.0
+offset_top = 549.0
+offset_right = 988.0
+offset_bottom = 652.0

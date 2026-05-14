@@ -10,4 +10,3 @@ script = ExtResource("1_2q6dc")
 [node name="HitZones" parent="." unique_id=1552270386 instance=ExtResource("2_w7c3h")]
 
 [node name="NoteSpawner" parent="." unique_id=1503950154 instance=ExtResource("3_w8frs")]
-position = Vector2(215, 158)

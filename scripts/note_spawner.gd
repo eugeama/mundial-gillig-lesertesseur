@@ -4,10 +4,10 @@ extends Node2D
 @onready var spawnTimer = $spawnTimer
 
 const LANES={
-	1: 200,
-	2: 400,
-	3: 600,
-	4: 800
+	1: 148,
+	2: 390,
+	3: 624,
+	4: 884
 }
 
 # Called when the node enters the scene tree for the first time.
