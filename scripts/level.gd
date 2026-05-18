@@ -20,10 +20,11 @@ func _process(delta: float) -> void:
 	input()
 
 func input():
-	var zone = hitZones.get_node()
-	if Input.is_action_just_pressed("dKey") and checkHit(zone):
-		print("input() -> hit")
-
+	#var zone = hitZones.get_node()
+	#if Input.is_action_just_pressed("dKey") and checkHit(zone):
+		#print("input() -> hit")
+	pass
+	
 func checkHit(zone: Area2D):
 	var hit = false
 	var overlapping = zone.get_overlapping_areas()

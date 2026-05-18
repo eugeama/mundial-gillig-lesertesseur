@@ -1,1 +1,6 @@
+VSeparator
+CollisionShape2D
+HBoxContainer
+Control
+Area2D
 ColorRect

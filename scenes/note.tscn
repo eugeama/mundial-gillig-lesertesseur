@@ -5,13 +5,39 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t3yvt"]
 size = Vector2(40, 40)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bnk6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_43c4j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_njo4t"]
+
 [node name="Note" type="Area2D" unique_id=598540474]
 script = ExtResource("1_t3yvt")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1408016082]
 offset_right = 40.0
 offset_bottom = 40.0
+scale = Vector2(3, 3)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=573823143]
-position = Vector2(20, 20)
+[node name="barely" type="CollisionShape2D" parent="." unique_id=573823143]
+position = Vector2(60.000008, 60)
+scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_t3yvt")
+debug_color = Color(0.8627451, 0, 0, 0.41960785)
+
+[node name="good" type="CollisionShape2D" parent="." unique_id=1307492079]
+position = Vector2(60, 60)
+scale = Vector2(4.912996, 4.7972755)
+shape = SubResource("RectangleShape2D_1bnk6")
+debug_color = Color(0.8269499, 0.39701223, 0, 0.41960785)
+
+[node name="great" type="CollisionShape2D" parent="." unique_id=508568699]
+position = Vector2(60, 60)
+scale = Vector2(3.359999, 3.5117092)
+shape = SubResource("RectangleShape2D_43c4j")
+debug_color = Color(0, 0.37688804, 0.9158007, 0.41960785)
+
+[node name="perfect" type="CollisionShape2D" parent="." unique_id=1106920076]
+position = Vector2(60, 60)
+scale = Vector2(2.016125, 2.009693)
+shape = SubResource("RectangleShape2D_njo4t")
