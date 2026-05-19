@@ -14,24 +14,20 @@ const LANE_KEYS = {
 func _ready() -> void:
 	pass # Replace with function body.
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	input()
 
 func input():
 	#var zone = hitZones.get_node()
-	#if Input.is_action_just_pressed("dKey") and checkHit(zone):
-		#print("input() -> hit")
-	pass
-	
-func checkHit(zone: Area2D):
-	var hit = false
-	var overlapping = zone.get_overlapping_areas()
-
-	if overlapping.is_empty():
-		print("checkHit() -> overlapping.is_empty()")
-	else:
-		hit = true	
-	return hit
-	
+	if Input.is_action_just_pressed("dKey") or Input.is_action_just_pressed("fKey") or Input.is_action_just_pressed("jKey") or Input.is_action_just_pressed("kKey"):
+		#print("input() -> Input.is_action_just_pressed(dKey)")
+		checkHit()
+		
+func checkHit():
+	for zone in hitZones.get_children():
+		var overlapping = zone.get_overlapping_areas()
+		if !overlapping.is_empty():
+			print("HIT")
+			return
+	print("MISS")
