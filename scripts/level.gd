@@ -17,6 +17,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	input()
+	checkMiss()
 
 func input():
 	#var zone = hitZones.get_node()
@@ -28,6 +29,13 @@ func checkHit():
 	for zone in hitZones.get_children():
 		var overlapping = zone.get_overlapping_areas()
 		if !overlapping.is_empty():
-			print("HIT")
+			print("checkHit() -> HIT")
 			return
-	print("MISS")
+	print("checkHit() -> MISS")
+	
+func checkMiss():
+	for child in noteSpawner.get_children():
+		if child is Node2D and child.position.y > get_viewport_rect().size.y + 5:
+			print("checkMiss() -> MISS")
+			child.queue_free()
+			
