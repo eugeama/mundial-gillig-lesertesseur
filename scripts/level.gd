@@ -30,6 +30,7 @@ func checkHit():
 		var overlapping = zone.get_overlapping_areas()
 		if !overlapping.is_empty():
 			print("checkHit() -> HIT")
+			$hitSFX.play()
 			return
 	print("checkHit() -> MISS")
 	
@@ -37,5 +38,6 @@ func checkMiss():
 	for child in noteSpawner.get_children():
 		if child is Node2D and child.position.y > get_viewport_rect().size.y + 5:
 			print("checkMiss() -> MISS")
+			$missSFX.play()
 			child.queue_free()
 			
