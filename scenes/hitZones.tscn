@@ -6,18 +6,18 @@
 [node name="HitZones" type="Node2D" unique_id=1552270386]
 script = ExtResource("1_1wc37")
 
-[node name="Note" parent="." unique_id=598540474 instance=ExtResource("2_rldgq")]
+[node name="notaD" parent="." unique_id=598540474 instance=ExtResource("2_rldgq")]
 position = Vector2(144, 467)
 SPEED = 0
 
-[node name="Note2" parent="." unique_id=1727811052 instance=ExtResource("2_rldgq")]
+[node name="notaF" parent="." unique_id=1727811052 instance=ExtResource("2_rldgq")]
 position = Vector2(393, 467)
 SPEED = 0
 
-[node name="Note3" parent="." unique_id=261411264 instance=ExtResource("2_rldgq")]
+[node name="notaJ" parent="." unique_id=261411264 instance=ExtResource("2_rldgq")]
 position = Vector2(646, 467)
 SPEED = 0
 
-[node name="Note4" parent="." unique_id=589798924 instance=ExtResource("2_rldgq")]
+[node name="notaK" parent="." unique_id=589798924 instance=ExtResource("2_rldgq")]
 position = Vector2(888, 467)
 SPEED = 0

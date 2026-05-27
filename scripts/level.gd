@@ -4,10 +4,10 @@ extends Node2D
 @onready var hitZones = $HitZones
 
 const LANE_KEYS = {
-	"dKey": "d",
-	"fKey": "f",
-	"jKey": "j",
-	"kKey": "k"
+	"dKey": "notaD",
+	"fKey": "notaF",
+	"jKey": "notaJ",
+	"kKey": "notaK"
 }
 
 # Called when the node enters the scene tree for the first time.
@@ -20,16 +20,26 @@ func _process(delta: float) -> void:
 	checkMiss()
 
 func input():
-	#var zone = hitZones.get_node()
-	if Input.is_action_just_pressed("dKey") or Input.is_action_just_pressed("fKey") or Input.is_action_just_pressed("jKey") or Input.is_action_just_pressed("kKey"):
-		#print("input() -> Input.is_action_just_pressed(dKey)")
-		checkHit()
+	for key in LANE_KEYS.keys():
+		if Input.is_action_just_pressed(key):
+			checkHit(key)
 		
-func checkHit():
-	for zone in hitZones.get_children():
-		var overlapping = zone.get_overlapping_areas()
-		if !overlapping.is_empty():
+		
+func checkHit(key: String):
+	var carril = LANE_KEYS[key]
+	var zone = hitZones.get_node(carril)
+	if zone == null:
+		return
+		
+	if zone.monitoring == false:
+		return
+		
+	var overlapping = zone.get_overlapping_areas()
+	
+	for nota in overlapping:
+		if nota.carril == carril:
 			print("checkHit() -> HIT")
+			nota.queue_free()
 			$hitSFX.play()
 			return
 	print("checkHit() -> MISS")
