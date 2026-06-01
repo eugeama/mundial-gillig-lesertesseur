@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var notas = "res://scripts/note.gd"
+@export var notas : PackedScene
 const LANES={
 	"notaD": 148,
 	"notaF": 390,
@@ -8,20 +8,48 @@ const LANES={
 	"notaK": 884
 }
 
+const tipoNotas=[
+	[1,0,2,1],
+	[0,2,0,1],
+	[1,0,0,2],
+	[0,1,2,0]
+]
+
+var patron_actual = []
+var beat_en_medida = 0
+
 func _ready() -> void:
-	pass
+	$Conductor.esperar(2)
 	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
-func spawnNote():
-	var lane = chooseLane()
+func _on_conductor_beat_mandar(position) -> void:
+	print("beat recibido, patron: ", patron_actual) 
+	if patron_actual.is_empty():
+		return
+	var tipo = patron_actual[beat_en_medida]
+	if tipo == 1:
+		mostrarNota()
+	elif tipo == 2:
+		mostrarNota()
+		mostrarNota()
+	beat_en_medida += 1
+	if beat_en_medida >= patron_actual.size():
+		beat_en_medida = 0
+
+func _on_conductor_medida_mandar(position) -> void:
+	print("medida recibida")
+	patron_actual = tipoNotas[randi_range(0, tipoNotas.size() - 1)]
+	beat_en_medida= 0
+
+func mostrarNota():
+	var lane = carrilQueAparece()
 	var nuevaNota = notas.instantiate()
 	nuevaNota.position.x = LANES[lane]
 	nuevaNota.carril = lane
 	add_child(nuevaNota)
 	
-func chooseLane():
+func carrilQueAparece():
 	var lane = LANES.keys()[randi_range(0, LANES.size() - 1)]
 	return lane

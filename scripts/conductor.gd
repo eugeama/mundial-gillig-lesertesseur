@@ -15,21 +15,21 @@ signal medidaMandar(position)
 
 func elegirNivel(nivel: String) -> void:
 	var niveles=load("res://scripts/niveles.gd")
-	var nivelElegido= niveles.NIVELES[nivel]
+	var nivelElegido= niveles.NIVELES["timber"]
 	bpm= nivelElegido["bpm"]
-	medidas= nivelElegido["medidas"]
-	$AudioStreamPlayer2D.stream = nivelElegido["cancion"]
+	medidas= nivelElegido["medida"]
+	stream = load(nivelElegido["cancion"])
 
 func _ready() -> void:
 	elegirNivel("")
-	segundos_beat = 60/bpm
-	$AudioStreamPlayer2D.play()
+	segundos_beat = 60.0/bpm
+	play()
 
 func _physics_process(_delta):
 	if playing:
 		posicion= get_playback_position() + AudioServer.get_time_since_last_mix()
 		posicion-= AudioServer.get_output_latency()
-		posicion_en_beats = int(floor(posicion / posicion_en_beats)) + beat_antes_empezar
+		posicion_en_beats = int(floor(posicion / segundos_beat)) + beat_antes_empezar
 		mandarBeat()
 
 func mandarBeat():
@@ -40,6 +40,20 @@ func mandarBeat():
 		emit_signal("medidaMandar", medida)
 		ultimo_beat= posicion_en_beats
 		medida+= 1
+		
+func esperar(tiempo_espera):
+	beat_antes_empezar= tiempo_espera
+	$Timer.wait_time= segundos_beat
+	$Timer.start()
 
-func _process(delta: float) -> void:
-	pass
+func arreglarDelay():
+	posicion_en_beats+=1
+	if posicion_en_beats < beat_antes_empezar -1:
+		$Timer.start()
+	elif posicion_en_beats == beat_antes_empezar - 1:
+		$Timer.wait_time= $Timer.wait_time - (AudioServer.get_time_to_next_mix() + AudioServer.get_output_latency())
+		$Timer.start()
+	else:
+		play()
+		$Timer.stop()
+	mandarBeat()
