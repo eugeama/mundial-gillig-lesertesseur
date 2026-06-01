@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://casoxvt267xik"
+path="res://.godot/imported/Pitbull - I Know You Want Me (Calle Ocho) - ItalianHype.mp3-db979d249f2b0d2068234e9ff58e6044.mp3str"
+
+[deps]
+
+source_file="res://canciones/Pitbull - I Know You Want Me (Calle Ocho) - ItalianHype.mp3"
+dest_files=["res://.godot/imported/Pitbull - I Know You Want Me (Calle Ocho) - ItalianHype.mp3-db979d249f2b0d2068234e9ff58e6044.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

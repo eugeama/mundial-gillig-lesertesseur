@@ -1,8 +1,6 @@
 extends Node2D
 
-@export var noteScene: PackedScene
-@onready var spawnTimer = $spawnTimer
-
+@export var notas = "res://scripts/note.gd"
 const LANES={
 	"notaD": 148,
 	"notaF": 390,
@@ -10,11 +8,8 @@ const LANES={
 	"notaK": 884
 }
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	spawnTimer.wait_time = randf_range(0.5, 1.2)
-	spawnTimer.timeout.connect(spawnNote)
-	spawnTimer.start()
+	pass
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -22,12 +17,10 @@ func _process(delta: float) -> void:
 
 func spawnNote():
 	var lane = chooseLane()
-	var newNote = noteScene.instantiate()
-	newNote.position.x = LANES[lane]
-	newNote.carril = lane
-	add_child(newNote)
-	spawnTimer.wait_time = randf_range(0.5, 1.2)
-	spawnTimer.start()
+	var nuevaNota = notas.instantiate()
+	nuevaNota.position.x = LANES[lane]
+	nuevaNota.carril = lane
+	add_child(nuevaNota)
 	
 func chooseLane():
 	var lane = LANES.keys()[randi_range(0, LANES.size() - 1)]
