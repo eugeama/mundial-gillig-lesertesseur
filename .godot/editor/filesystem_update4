@@ -1,12 +1,2 @@
-res://scenes/conductor.tscn
-res://scenes/niveles.gd
-res://scenes/niveles.tscn
-res://scenes/menu.tscn
-res://scenes/menuNiveles.tscn
-res://scripts/conductor.gd
-res://scripts/menuNiveles.gd
-res://scripts/note_spawner.gd
 res://scenes/noteSpawner.tscn
-res://scripts/niveles.gd
-res://scripts/menu.gd
-res://scenes/level.tscn
+res://scripts/level.gd

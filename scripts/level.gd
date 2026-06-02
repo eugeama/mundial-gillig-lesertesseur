@@ -38,11 +38,10 @@ func checkHit(key: String):
 	
 	for nota in overlapping:
 		if nota.carril == carril:
-			print("checkHit() -> HIT")
+			calcularPuntaje(nota.puntaje(zone))
 			nota.queue_free()
 			$hitSFX.play()
 			return
-	print("checkHit() -> MISS")
 	
 func checkMiss():
 	for child in noteSpawner.get_children():
@@ -51,3 +50,7 @@ func checkMiss():
 			$missSFX.play()
 			child.queue_free()
 			
+func calcularPuntaje(puntaje: float):
+	pass #me falta hacer el metodo pero lo hago el finde bue pero basicamente es un coso que te calcula combo 
+	#y te va sumando puntatje. para no teener todo en checkhit. t digo por si te dan ganas de hacerlo euugew
+	
