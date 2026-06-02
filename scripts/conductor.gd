@@ -14,16 +14,17 @@ signal beatMandar(position)
 signal medidaMandar(position)
 
 func elegirNivel(nivel: String) -> void:
-	var niveles=load("res://scripts/niveles.gd")
-	var nivelElegido= niveles.NIVELES["timber"]
+	var niveles=preload("res://scripts/niveles.gd")
+	var nivelesElegir = niveles.new()  
+	var nivelElegido= nivelesElegir.NIVELES[nivel]
 	bpm= nivelElegido["bpm"]
 	medidas= nivelElegido["medida"]
 	stream = load(nivelElegido["cancion"])
+	segundos_beat = 60.0/bpm
 
 func _ready() -> void:
-	elegirNivel("")
-	segundos_beat = 60.0/bpm
-	play()
+	if stream != null:
+		play()
 
 func _physics_process(_delta):
 	if playing:
@@ -45,6 +46,7 @@ func esperar(tiempo_espera):
 	beat_antes_empezar= tiempo_espera
 	$Timer.wait_time= segundos_beat
 	$Timer.start()
+	play()
 
 func arreglarDelay():
 	posicion_en_beats+=1

@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://o7qk2shq3m0y"]
+
+[ext_resource type="Script" uid="uid://dtuuiwadnvbup" path="res://scripts/menu.gd" id="1_mhnvy"]
+[ext_resource type="Texture2D" uid="uid://48agwm45f2un" path="res://fotos/pitbull.jpg" id="1_yqeox"]
+[ext_resource type="AudioStream" uid="uid://c8tmc7r6qrinp" path="res://canciones/Pitbull - Hey Baby (Drop It To The Floor) ft. T-Pain (Lyrics) - 7clouds.mp3" id="2_con2f"]
+[ext_resource type="AudioStream" uid="uid://rih67g7l6bcb" path="res://sfx/dale_1.mp3" id="3_mhnvy"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vjb58"]
+texture = ExtResource("1_yqeox")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_con2f"]
+bg_color = Color(0.04047054, 0.07948225, 0.23498282, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mhnvy"]
+bg_color = Color(0.0293939, 0.06739805, 0.20350757, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ytvr"]
+bg_color = Color(0.14893675, 0.23311707, 0.565697, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="Menu" type="Control" unique_id=242673938]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_mhnvy")
+
+[node name="Panel" type="Panel" parent="." unique_id=644438822]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.759998, 16.199999)
+theme_override_styles/panel = SubResource("StyleBoxTexture_vjb58")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1922141068]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 451.00003
+offset_right = 389.0
+offset_bottom = 567.0
+scale = Vector2(1, 1.5)
+theme_override_constants/separation = 30
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=160505417]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_con2f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mhnvy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4ytvr")
+text = "Empezar"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1125495652]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_con2f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mhnvy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4ytvr")
+text = "Salir"
+
+[node name="fondo" type="AudioStreamPlayer" parent="." unique_id=484070142]
+stream = ExtResource("2_con2f")
+autoplay = true
+
+[node name="dale" type="AudioStreamPlayer" parent="." unique_id=1615065469]
+stream = ExtResource("3_mhnvy")
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

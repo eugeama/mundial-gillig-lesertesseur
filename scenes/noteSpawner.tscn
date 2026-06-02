@@ -2,13 +2,7 @@
 
 [ext_resource type="Script" uid="uid://n6r7esdlusbd" path="res://scripts/note_spawner.gd" id="1_4s5ki"]
 [ext_resource type="PackedScene" uid="uid://5y24benh4njx" path="res://scenes/note.tscn" id="2_r4mu2"]
-[ext_resource type="PackedScene" uid="uid://ot3toaulel74" path="res://scenes/conductor.tscn" id="2_xh8t2"]
 
 [node name="NoteSpawner" type="Node2D" unique_id=1503950154]
 script = ExtResource("1_4s5ki")
 notas = ExtResource("2_r4mu2")
-
-[node name="Conductor" parent="." unique_id=1190567953 instance=ExtResource("2_xh8t2")]
-
-[connection signal="beatMandar" from="Conductor" to="." method="_on_conductor_beat_mandar"]
-[connection signal="medidaMandar" from="Conductor" to="." method="_on_conductor_medida_mandar"]

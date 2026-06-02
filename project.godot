@@ -11,9 +11,17 @@ config_version=5
 [application]
 
 config/name="mundial"
-run/main_scene="uid://ecuglfhf2cm6"
+run/main_scene="uid://o7qk2shq3m0y"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Conductor="*uid://ot3toaulel74"
+
+[display]
+
+mouse_cursor/custom_image="uid://drubpisvroy1x"
 
 [input]
 

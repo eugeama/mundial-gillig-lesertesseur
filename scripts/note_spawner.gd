@@ -19,13 +19,14 @@ var patron_actual = []
 var beat_en_medida = 0
 
 func _ready() -> void:
-	$Conductor.esperar(2)
+	Conductor.beatMandar.connect(_on_conductor_beat_mandar)
+	Conductor.medidaMandar.connect(_on_conductor_medida_mandar)
+	Conductor.esperar(2)
 	
 func _process(delta: float) -> void:
 	pass
 
 func _on_conductor_beat_mandar(position) -> void:
-	print("beat recibido, patron: ", patron_actual) 
 	if patron_actual.is_empty():
 		return
 	var tipo = patron_actual[beat_en_medida]
@@ -39,7 +40,6 @@ func _on_conductor_beat_mandar(position) -> void:
 		beat_en_medida = 0
 
 func _on_conductor_medida_mandar(position) -> void:
-	print("medida recibida")
 	patron_actual = tipoNotas[randi_range(0, tipoNotas.size() - 1)]
 	beat_en_medida= 0
 

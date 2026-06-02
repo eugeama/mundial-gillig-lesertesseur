@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://8giuxobrjewy"]
+
+[ext_resource type="Script" uid="uid://dcy7i6frqbm7i" path="res://scripts/menuNiveles.gd" id="1_5d2ng"]
+[ext_resource type="Texture2D" uid="uid://cow7n5rv5ydvk" path="res://fotos/334412.jpg" id="2_4vq56"]
+[ext_resource type="Texture2D" uid="uid://doo3uqlam68cr" path="res://fotos/6f75d61db668dfa238635caf7f58176b-removebg-preview.png" id="2_i3bci"]
+[ext_resource type="Texture2D" uid="uid://wkc44jfr8mqs" path="res://fotos/Pitbull_-_Fireball_(feat._John_Ryan).png" id="3_js4ln"]
+[ext_resource type="Texture2D" uid="uid://ct0fk0x3jba2v" path="res://fotos/Pitbull_i_know_you_want_me_cover.jpg" id="4_i3bci"]
+[ext_resource type="Texture2D" uid="uid://drgrakjrl7xxg" path="res://fotos/ab67616d0000b2732ffc2c580b6595a3e675a730.jpeg" id="5_4vq56"]
+[ext_resource type="Texture2D" uid="uid://f7v65sf5f3rb" path="res://fotos/ab67616d0000b2733f4358309dd9329a1f61cb5a.jpeg" id="6_vxwan"]
+[ext_resource type="AudioStream" uid="uid://rih67g7l6bcb" path="res://sfx/dale_1.mp3" id="7_i3bci"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vxwan"]
+texture = ExtResource("2_4vq56")
+
+[node name="Niveles" type="Control" unique_id=613824716]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_5d2ng")
+
+[node name="Panel" type="Panel" parent="." unique_id=217711598]
+layout_mode = 0
+offset_left = -14.999999
+offset_top = -11.0
+offset_right = 25.893959
+offset_bottom = 30.09095
+scale = Vector2(28.830666, 16.305296)
+theme_override_styles/panel = SubResource("StyleBoxTexture_vxwan")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=569595047]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 522.0
+offset_right = 403.0
+offset_bottom = 882.0
+scale = Vector2(0.22861236, 0.21804848)
+texture_normal = ExtResource("2_i3bci")
+
+[node name="Label" type="Label" parent="." unique_id=287398242]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 85.0
+offset_right = 565.0
+offset_bottom = 108.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1658884313]
+layout_mode = 0
+offset_left = 322.0
+offset_top = 120.0
+offset_right = 922.0
+offset_bottom = 620.0
+scale = Vector2(0.90148383, 0.8400003)
+theme_override_constants/separation = 100
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1047908513]
+layout_mode = 2
+theme_override_constants/separation = 200
+alignment = 1
+
+[node name="fireball" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=874076237]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = ExtResource("3_js4ln")
+
+[node name="ikywm" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=504501474]
+layout_mode = 2
+texture_normal = ExtResource("4_i3bci")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=467667992]
+custom_minimum_size = Vector2(2.5, 2.5)
+layout_mode = 2
+theme_override_constants/separation = 200
+alignment = 1
+
+[node name="timber" type="TextureButton" parent="VBoxContainer/HBoxContainer2" unique_id=1319443015]
+layout_mode = 2
+texture_normal = ExtResource("5_4vq56")
+
+[node name="eltaxi" type="TextureButton" parent="VBoxContainer/HBoxContainer2" unique_id=868132468]
+layout_mode = 2
+texture_normal = ExtResource("6_vxwan")
+
+[node name="dale" type="AudioStreamPlayer" parent="." unique_id=763688007]
+stream = ExtResource("7_i3bci")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/fireball" to="." method="_on_fireball_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/ikywm" to="." method="_on_ikywm_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/timber" to="." method="_on_timber_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/eltaxi" to="." method="_on_eltaxi_pressed"]
