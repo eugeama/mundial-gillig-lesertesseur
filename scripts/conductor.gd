@@ -13,6 +13,7 @@ var tiempo= 0
 
 signal beatMandar(position)
 signal medidaMandar(position)
+signal terminarNivel()
 
 func elegirNivel(nivel: String) -> void:
 	var niveles=preload("res://scripts/niveles.gd")
@@ -23,11 +24,12 @@ func elegirNivel(nivel: String) -> void:
 	stream = load(nivelElegido["cancion"])
 	tiempo= nivelElegido["tiempo"]
 	segundos_beat = 60.0/bpm
-
+	await get_tree().create_timer(tiempo).timeout
+	terminarNivel.emit()
+	
 func _ready() -> void:
 	if stream != null:
 		play()
-		await get_tree().create_timer(tiempo).timeout
 
 func _physics_process(_delta):
 	if playing:

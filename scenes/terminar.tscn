@@ -1,5 +1,32 @@
 [gd_scene format=3 uid="uid://dv74aiji6nmtn"]
 
+[ext_resource type="Script" uid="uid://bysjj0jv5jy00" path="res://scripts/terminar.gd" id="1_miivf"]
+[ext_resource type="Texture2D" uid="uid://48agwm45f2un" path="res://fotos/pitbull.jpg" id="2_xip3t"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_thjpi"]
+texture = ExtResource("2_xip3t")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ecjqt"]
+bg_color = Color(0.04047054, 0.07948225, 0.23498282, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bfdyb"]
+bg_color = Color(0.0293939, 0.06739805, 0.20350757, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0lo2p"]
+bg_color = Color(0.14893675, 0.23311707, 0.565697, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
 [node name="Terminar" type="Control" unique_id=319243800]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +34,39 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_miivf")
+
+[node name="Panel" type="Panel" parent="." unique_id=175619236]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.759998, 16.199999)
+theme_override_styles/panel = SubResource("StyleBoxTexture_thjpi")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1073429523]
+layout_mode = 0
+offset_left = 345.99997
+offset_top = 353.0
+offset_right = 703.08923
+offset_bottom = 457.0
+scale = Vector2(1.333, 2)
+theme_override_constants/separation = 34
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=965907425]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_ecjqt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bfdyb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0lo2p")
+text = "volver al menú principal"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=421535990]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_ecjqt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bfdyb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0lo2p")
+text = "Elegir otro nivel"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

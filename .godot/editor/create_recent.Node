@@ -1,8 +1,8 @@
+Label
 Button
 AudioStreamPlayer
 VBoxContainer
 Control
-Label
 TextureButton
 HBoxContainer
 Panel

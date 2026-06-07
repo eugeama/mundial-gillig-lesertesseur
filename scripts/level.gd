@@ -15,7 +15,7 @@ const LANE_KEYS = {
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	Conductor.terminarNivel.connect(_on_terminar_nivel)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -43,6 +43,7 @@ func checkHit(key: String):
 		if nota.carril == carril:
 			puntajeF+=nota.puntaje(zone)
 			comboF+=1
+			actualizarPuntosYCombo()
 			nota.queue_free()
 			$hitSFX.play()
 			return
@@ -51,7 +52,14 @@ func checkMiss():
 	for child in noteSpawner.get_children():
 		if child is Node2D and child.position.y > get_viewport_rect().size.y + 5:
 			comboF=0
-			print("combo: ", comboF)
+			actualizarPuntosYCombo()
 			$missSFX.play()
 			child.queue_free()
+			
+func _on_terminar_nivel() -> void:
+	get_tree().change_scene_to_file("res://scenes/terminar.tscn")
+	
+func actualizarPuntosYCombo()-> void:
+	$LabelPuntos.text = "Puntos: " + str(puntajeF)
+	$LabelCombo.text= "Combo: "+ str(comboF)
 	

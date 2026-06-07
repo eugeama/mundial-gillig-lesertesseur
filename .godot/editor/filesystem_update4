@@ -8,3 +8,7 @@ res://scripts/niveles.gd
 res://scripts/conductor.gd
 res://scripts/menuNiveles.gd
 res://scenes/terminar.tscn
+res://scenes/conductor.tscn
+res://scripts/terminar.gd
+res://scenes/perder.tscn
+res://scenes/menu.tscn
