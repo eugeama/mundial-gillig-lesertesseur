@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://dv74aiji6nmtn"]
+[gd_scene format=3 uid="uid://dlvkidys1li7t"]
 
-[ext_resource type="Script" uid="uid://bysjj0jv5jy00" path="res://scripts/terminar.gd" id="1_miivf"]
-[ext_resource type="Texture2D" uid="uid://48agwm45f2un" path="res://fotos/pitbull.jpg" id="2_xip3t"]
+[ext_resource type="Script" uid="uid://bysjj0jv5jy00" path="res://scripts/terminar.gd" id="1_emwh5"]
+[ext_resource type="Texture2D" uid="uid://48agwm45f2un" path="res://fotos/pitbull.jpg" id="2_8oo2o"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_thjpi"]
-texture = ExtResource("2_xip3t")
+texture = ExtResource("2_8oo2o")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ecjqt"]
 bg_color = Color(0.04047054, 0.07948225, 0.23498282, 1)
@@ -34,7 +34,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_miivf")
+script = ExtResource("1_emwh5")
 
 [node name="Panel" type="Panel" parent="." unique_id=175619236]
 layout_mode = 0
@@ -58,7 +58,7 @@ theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_ecjqt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_bfdyb")
 theme_override_styles/hover = SubResource("StyleBoxFlat_0lo2p")
-text = "volver al menú principal"
+text = "reintentar"
 
 [node name="Button2" type="Button" parent="VBoxContainer" unique_id=421535990]
 layout_mode = 2
@@ -66,27 +66,7 @@ theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_ecjqt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_bfdyb")
 theme_override_styles/hover = SubResource("StyleBoxFlat_0lo2p")
-text = "Elegir otro nivel"
-
-[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1399328768]
-layout_mode = 0
-offset_left = 348.0
-offset_top = 57.0
-offset_right = 705.08923
-offset_bottom = 240.0
-scale = Vector2(1.333, 2)
-theme_override_constants/separation = 10
-
-[node name="Label" type="Label" parent="VBoxContainer2" unique_id=1056550512]
-layout_mode = 2
-theme_override_font_sizes/font_size = 50
-text = "¡Terminaste!"
-
-[node name="LabelPuntajeF" type="Label" parent="VBoxContainer2" unique_id=21075153]
-layout_mode = 2
-
-[node name="LabelComboF" type="Label" parent="VBoxContainer2" unique_id=1835820381]
-layout_mode = 2
+text = "Menú principal"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

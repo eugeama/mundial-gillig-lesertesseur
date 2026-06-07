@@ -3,9 +3,9 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
-
+	$VBoxContainer2/LabelPuntajeF.text= "puntaje final: "+ str(PuntosYCombos.puntos)
+	$VBoxContainer2/LabelComboF.text= "mejor combo: "+str(PuntosYCombos.combos)
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

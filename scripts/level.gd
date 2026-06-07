@@ -5,6 +5,7 @@ extends Node2D
 
 var puntajeF=0
 var comboF=0
+var ultimoCombo= 0
 
 const LANE_KEYS = {
 	"dKey": "notaD",
@@ -15,6 +16,7 @@ const LANE_KEYS = {
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	actualizarPuntosYCombo()
 	Conductor.terminarNivel.connect(_on_terminar_nivel)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -51,15 +53,23 @@ func checkHit(key: String):
 func checkMiss():
 	for child in noteSpawner.get_children():
 		if child is Node2D and child.position.y > get_viewport_rect().size.y + 5:
+			mejorCombo()
 			comboF=0
 			actualizarPuntosYCombo()
 			$missSFX.play()
 			child.queue_free()
 			
 func _on_terminar_nivel() -> void:
+	PuntosYCombos.puntos= puntajeF
+	ultimoCombo= comboF
+	PuntosYCombos.puntos= ultimoCombo
 	get_tree().change_scene_to_file("res://scenes/terminar.tscn")
 	
+func mejorCombo()-> void:
+	if comboF> ultimoCombo:
+		ultimoCombo= comboF
+	
 func actualizarPuntosYCombo()-> void:
-	$LabelPuntos.text = "Puntos: " + str(puntajeF)
-	$LabelCombo.text= "Combo: "+ str(comboF)
+	$VBoxContainer/LabelPuntos.text = "Puntos: " + str(puntajeF)
+	$VBoxContainer/LabelCombo.text= "Combo actual: "+ str(comboF)
 	

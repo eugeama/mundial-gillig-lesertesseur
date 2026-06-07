@@ -12,3 +12,5 @@ res://scenes/conductor.tscn
 res://scripts/terminar.gd
 res://scenes/perder.tscn
 res://scenes/menu.tscn
+res://scenes/menuNiveles.tscn
+res://scripts/puntosYCombos.gd

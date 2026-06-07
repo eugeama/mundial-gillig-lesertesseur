@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Conductor="*uid://ot3toaulel74"
+PuntosYCombos="*uid://c5m8g5k11lju2"
 
 [display]
 

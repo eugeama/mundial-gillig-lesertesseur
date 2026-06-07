@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://8giuxobrjewy"]
 
 [ext_resource type="Script" uid="uid://dcy7i6frqbm7i" path="res://scripts/menuNiveles.gd" id="1_5d2ng"]
-[ext_resource type="Texture2D" uid="uid://cow7n5rv5ydvk" path="res://fotos/334412.jpg" id="2_4vq56"]
 [ext_resource type="Texture2D" uid="uid://doo3uqlam68cr" path="res://fotos/6f75d61db668dfa238635caf7f58176b-removebg-preview.png" id="2_i3bci"]
 [ext_resource type="Texture2D" uid="uid://wkc44jfr8mqs" path="res://fotos/Pitbull_-_Fireball_(feat._John_Ryan).png" id="3_js4ln"]
 [ext_resource type="Texture2D" uid="uid://ct0fk0x3jba2v" path="res://fotos/Pitbull_i_know_you_want_me_cover.jpg" id="4_i3bci"]
@@ -9,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://f7v65sf5f3rb" path="res://fotos/ab67616d0000b2733f4358309dd9329a1f61cb5a.jpeg" id="6_vxwan"]
 [ext_resource type="AudioStream" uid="uid://rih67g7l6bcb" path="res://sfx/dale_1.mp3" id="7_i3bci"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vxwan"]
-texture = ExtResource("2_4vq56")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i3bci"]
+bg_color = Color(1, 1, 1, 1)
 
 [node name="Niveles" type="Control" unique_id=613824716]
 layout_mode = 3
@@ -24,7 +23,7 @@ offset_top = -11.0
 offset_right = 25.893959
 offset_bottom = 30.09095
 scale = Vector2(28.830666, 16.305296)
-theme_override_styles/panel = SubResource("StyleBoxTexture_vxwan")
+theme_override_styles/panel = SubResource("StyleBoxFlat_i3bci")
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=569595047]
 layout_mode = 0
