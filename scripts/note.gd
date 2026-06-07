@@ -14,16 +14,18 @@ func _process(delta: float) -> void:
 		queue_free()
 		
 func puntaje(zona: Area2D)-> float:
-	var perfecto = zona.get_node("perfect")
-	var bien= zona.get_node("great")
-	var bueno= zona.get_node("good")
-	var medio= zona.get_node("barely")
+	var puntajes= ["perfect", "great", "good", "barely"]
 	
-	if perfecto.get_overlapping_areas().has(self):
-		return 3
-	elif bien.get_overlapping_areas().has(self):
-		return 2
-	elif bueno.get_overlapping_areas().has(self):
-		return 1
-	else:
-		return 0.5
+	for puntos in puntajes:
+		var tipoNota= zona.get_node(puntos)
+		var mitadNota= tipoNota.shape.size * tipoNota.scale/2
+		var distanciaDeCentro= (position - zona.global_position).abs()
+		if distanciaDeCentro.x <= mitadNota.x and distanciaDeCentro.y <= mitadNota.y:
+			if puntos == "perfect":
+				return 3
+			elif puntos== "great":
+				return 2
+			elif puntos== "good":
+				return 1
+	return 0.5
+		

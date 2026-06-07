@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://ecuglfhf2cm6"]
 
 [ext_resource type="Script" uid="uid://df2ow71pevv2g" path="res://scripts/level.gd" id="1_2q6dc"]
-[ext_resource type="PackedScene" uid="uid://cxvgwy4p7jnio" path="res://scenes/hitZones.tscn" id="2_w7c3h"]
+[ext_resource type="Script" uid="uid://c2nry8r1b1qx8" path="res://scripts/hit_zones.gd" id="2_2r41h"]
+[ext_resource type="PackedScene" uid="uid://5y24benh4njx" path="res://scenes/note.tscn" id="3_klq6b"]
 [ext_resource type="PackedScene" uid="uid://k2oj1ui7wofa" path="res://scenes/noteSpawner.tscn" id="3_w8frs"]
 [ext_resource type="AudioStream" uid="uid://bt587hrsdq0l6" path="res://sfx/hitSFX.MP3" id="4_mx8sn"]
 [ext_resource type="AudioStream" uid="uid://c3btomlr1881c" path="res://sfx/missSFX.MP3" id="5_ppgk2"]
@@ -9,7 +10,24 @@
 [node name="level" type="Node2D" unique_id=1522307892]
 script = ExtResource("1_2q6dc")
 
-[node name="HitZones" parent="." unique_id=1552270386 instance=ExtResource("2_w7c3h")]
+[node name="HitZones" type="Node2D" parent="." unique_id=1552270386]
+script = ExtResource("2_2r41h")
+
+[node name="notaD" parent="HitZones" unique_id=598540474 instance=ExtResource("3_klq6b")]
+position = Vector2(144, 467)
+SPEED = 0
+
+[node name="notaF" parent="HitZones" unique_id=1727811052 instance=ExtResource("3_klq6b")]
+position = Vector2(393, 467)
+SPEED = 0
+
+[node name="notaJ" parent="HitZones" unique_id=261411264 instance=ExtResource("3_klq6b")]
+position = Vector2(646, 467)
+SPEED = 0
+
+[node name="notaK" parent="HitZones" unique_id=589798924 instance=ExtResource("3_klq6b")]
+position = Vector2(888, 467)
+SPEED = 0
 
 [node name="NoteSpawner" parent="." unique_id=1503950154 instance=ExtResource("3_w8frs")]
 

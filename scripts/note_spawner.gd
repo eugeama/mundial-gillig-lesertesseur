@@ -21,7 +21,7 @@ var beat_en_medida = 0
 func _ready() -> void:
 	Conductor.beatMandar.connect(_on_conductor_beat_mandar)
 	Conductor.medidaMandar.connect(_on_conductor_medida_mandar)
-	Conductor.esperar(2)
+	Conductor.esperar(0)
 	
 func _process(delta: float) -> void:
 	pass

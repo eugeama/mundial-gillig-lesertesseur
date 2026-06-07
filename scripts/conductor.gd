@@ -9,6 +9,7 @@ var segundos_beat= 0
 var ultimo_beat= 0
 var beat_antes_empezar= 0
 var medida= 1
+var tiempo= 0
 
 signal beatMandar(position)
 signal medidaMandar(position)
@@ -20,11 +21,13 @@ func elegirNivel(nivel: String) -> void:
 	bpm= nivelElegido["bpm"]
 	medidas= nivelElegido["medida"]
 	stream = load(nivelElegido["cancion"])
+	tiempo= nivelElegido["tiempo"]
 	segundos_beat = 60.0/bpm
 
 func _ready() -> void:
 	if stream != null:
 		play()
+		await get_tree().create_timer(tiempo).timeout
 
 func _physics_process(_delta):
 	if playing:

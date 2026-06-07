@@ -1,39 +1,39 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1780433079
-icon.svg::CompressedTexture2D::5113161746150655415::1780330194::1780330194::1::::<><><>0<>0<>7eb41c534106afbda340fd6ac8451971<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://canciones/::1780431012
-Osmani Garcia Ft. Pitbull, Sentato, Dayami La Musa - El Taxi (Letra_Lyrics) - neiByotsE(1).mp3::AudioStreamMP3::3091870904786789963::1780330194::1780330194::1::::<><><>0<>0<>c8a6d53150ddece0a20e39def7c6634c<>res://.godot/imported/Osmani Garcia Ft. Pitbull, Sentato, Dayami La Musa - El Taxi (Letra_Lyrics) - neiByotsE(1).mp3-37c9943bbfd5fb0fa7746f95003e476a.mp3str::
-Pitbull - Fireball (Lyrics) ft. John Ryan - Dan Music.mp3::AudioStreamMP3::528440592986970620::1780330194::1780330194::1::::<><><>0<>0<>50dd8bf5cf47d408d6cef6bd9e0a0fb9<>res://.godot/imported/Pitbull - Fireball (Lyrics) ft. John Ryan - Dan Music.mp3-af67dd362c14dafff6432dc27038d60e.mp3str::
-Pitbull - Hey Baby (Drop It To The Floor) ft. T-Pain (Lyrics) - 7clouds.mp3::AudioStreamMP3::7129030268708850961::1780431012::1780431012::1::::<><><>0<>0<>5fce8666d31eef5dd12ec3d0f0b5aeb3<>res://.godot/imported/Pitbull - Hey Baby (Drop It To The Floor) ft. T-Pain (Lyrics) - 7clouds.mp3-51aed4be8f8905f7b8319bb3f5a4504d.mp3str::
-Pitbull - I Know You Want Me (Calle Ocho) - ItalianHype.mp3::AudioStreamMP3::4810892411728925574::1780330194::1780330194::1::::<><><>0<>0<>0ea177e8d5e4fb27e357d81f3b1b6956<>res://.godot/imported/Pitbull - I Know You Want Me (Calle Ocho) - ItalianHype.mp3-db979d249f2b0d2068234e9ff58e6044.mp3str::
-Pitbull - Timber (Lyrics) ft. Keha - CountryHype.mp3::AudioStreamMP3::1069464915110515914::1780330194::1780330194::1::::<><><>0<>0<>bee42720bbdb0e2310f2d3d1d2ab130c<>res://.godot/imported/Pitbull - Timber (Lyrics) ft. Keha - CountryHype.mp3-277919c3591c088ba66dc4044e799196.mp3str::
-::res://fotos/::1780431012
-6f75d61db668dfa238635caf7f58176b-removebg-preview.png::CompressedTexture2D::8172543799627895889::1780431012::1780431012::1::::<><><>0<>0<>b75a785bf68ccb51486ce5bc8334b955<>res://.godot/imported/6f75d61db668dfa238635caf7f58176b-removebg-preview.png-00ced8ac9d3fdfa4563bc7ade17b120a.ctex::
-334412.jpg::CompressedTexture2D::5802869250954621920::1780431012::1780431012::1::::<><><>0<>0<>0a9af49329204a27b432ebc94e1c0ddf<>res://.godot/imported/334412.jpg-26f68d3f14cf1a5133bfbe739ea84f9d.ctex::
-ab67616d0000b2732ffc2c580b6595a3e675a730.jpeg::CompressedTexture2D::8365891388252370432::1780431012::1780431012::1::::<><><>0<>0<>7c50edc6b1a119bbedc757eae3646993<>res://.godot/imported/ab67616d0000b2732ffc2c580b6595a3e675a730.jpeg-d8122a1d0bbc907f4b25a30501dbd36e.ctex::
-ab67616d0000b2733f4358309dd9329a1f61cb5a.jpeg::CompressedTexture2D::418336326553702747::1780431012::1780431012::1::::<><><>0<>0<>2e45c0eee9216e40dbbb2a6a08bc2fb2<>res://.godot/imported/ab67616d0000b2733f4358309dd9329a1f61cb5a.jpeg-254d05f065703ac4d7dd7719742948a1.ctex::
-images-removebg-preview(1).png::CompressedTexture2D::8393847900879110283::1780431012::1780431012::1::::<><><>0<>0<>7c4ff1b3d5af175a29a716c37fc2354e<>res://.godot/imported/images-removebg-preview(1).png-78f34e0babce21cf03654c3eab58d27a.ctex::
-pitbull.jpg::CompressedTexture2D::2103612821559643081::1780431012::1780431012::1::::<><><>0<>0<>3806f9a0bd45f5a8694b2e60aeada3b2<>res://.godot/imported/pitbull.jpg-9d1d12f4aa17631fc8287d19eba51c95.ctex::
-Pitbull_-_Fireball_(feat._John_Ryan).png::CompressedTexture2D::1564973096917685338::1780431012::1780431012::1::::<><><>0<>0<>1100e994e3acf7ac71bba614094b4bf0<>res://.godot/imported/Pitbull_-_Fireball_(feat._John_Ryan).png-e745c35e93a4a859ddacae1020d72556.ctex::
-Pitbull_i_know_you_want_me_cover.jpg::CompressedTexture2D::6158361633161707395::1780431012::1780431012::1::::<><><>0<>0<>7d0ddd573fdb9614a7cd7cc5d3926b68<>res://.godot/imported/Pitbull_i_know_you_want_me_cover.jpg-1845ff49e0546e7b60b27f70882500e9.ctex::
-::res://scenes/::1780432944
-conductor.tscn::PackedScene::1023601730391724377::1780330194::0::1::::<><><>0<>0<><>::uid://dep27cjcoyitx::::res://scripts/conductor.gd
-hitZones.tscn::PackedScene::6430941599403103418::1780330194::0::1::::<><><>0<>0<><>::uid://c2nry8r1b1qx8::::res://scripts/hit_zones.gd<>uid://5y24benh4njx::::res://scenes/note.tscn
-level.tscn::PackedScene::286109770485675015::1780432944::0::1::::<><><>0<>0<><>::uid://df2ow71pevv2g::::res://scripts/level.gd<>uid://cxvgwy4p7jnio::::res://scenes/hitZones.tscn<>uid://k2oj1ui7wofa::::res://scenes/noteSpawner.tscn<>uid://bt587hrsdq0l6::::res://sfx/hitSFX.MP3<>uid://c3btomlr1881c::::res://sfx/missSFX.MP3
-menu.tscn::PackedScene::1049694675163156570::1780431012::0::1::::<><><>0<>0<><>::uid://dtuuiwadnvbup::::res://scripts/menu.gd<>uid://48agwm45f2un::::res://fotos/pitbull.jpg<>uid://c8tmc7r6qrinp::::res://canciones/Pitbull - Hey Baby (Drop It To The Floor) ft. T-Pain (Lyrics) - 7clouds.mp3<>uid://rih67g7l6bcb::::res://sfx/dale_1.mp3
-menuNiveles.tscn::PackedScene::2329140788132484364::1780431012::0::1::::<><><>0<>0<><>::uid://dcy7i6frqbm7i::::res://scripts/menuNiveles.gd<>uid://cow7n5rv5ydvk::::res://fotos/334412.jpg<>uid://doo3uqlam68cr::::res://fotos/6f75d61db668dfa238635caf7f58176b-removebg-preview.png<>uid://wkc44jfr8mqs::::res://fotos/Pitbull_-_Fireball_(feat._John_Ryan).png<>uid://ct0fk0x3jba2v::::res://fotos/Pitbull_i_know_you_want_me_cover.jpg<>uid://drgrakjrl7xxg::::res://fotos/ab67616d0000b2732ffc2c580b6595a3e675a730.jpeg<>uid://f7v65sf5f3rb::::res://fotos/ab67616d0000b2733f4358309dd9329a1f61cb5a.jpeg<>uid://rih67g7l6bcb::::res://sfx/dale_1.mp3
-note.tscn::PackedScene::2156901581370080501::1780432532::0::1::::<><><>0<>0<><>::uid://5y1srtdtrnp2::::res://scripts/note.gd
-noteSpawner.tscn::PackedScene::758494142694131602::1780431012::0::1::::<><><>0<>0<><>::uid://n6r7esdlusbd::::res://scripts/note_spawner.gd<>uid://5y24benh4njx::::res://scenes/note.tscn
-::res://scripts/::1780433062
-conductor.gd::GDScript::7472679715212453341::1780431012::0::1::::<>AudioStreamPlayer2D<><>0<>0<><>::
-hit_zones.gd::GDScript::6695853865062529359::1780330194::0::1::::<>Node2D<><>0<>0<><>::
-level.gd::GDScript::7566835515593563960::1780433062::0::1::::<>Node2D<><>0<>0<><>::
-menu.gd::GDScript::8535367417157891475::1780431012::0::1::::<>Control<><>0<>0<><>::
-menuNiveles.gd::GDScript::7351143671314282976::1780431012::0::1::::<>Control<><>0<>0<><>::
-niveles.gd::GDScript::5898656445241649563::1780330194::0::1::::niveles<>Resource<><>0<>0<><>::
-note.gd::GDScript::2156822083751239077::1780432941::0::1::::<>Area2D<><>0<>0<><>::
-note_spawner.gd::GDScript::977540250003953565::1780431012::0::1::::<>Node2D<><>0<>0<><>::
-::res://sfx/::1780431012
-dale_1.mp3::AudioStreamMP3::1210207433925329777::1780431012::1780431012::1::::<><><>0<>0<>a2d870fe815b72678b9f8d6bcfcb1ff8<>res://.godot/imported/dale_1.mp3-ae51ff32b15b066f2950fc5102380991.mp3str::
-hitSFX.MP3::AudioStreamMP3::3784001246351390505::1780330194::1780330194::1::::<><><>0<>0<>223833cee3837e4876940cb9b1c480c9<>res://.godot/imported/hitSFX.MP3-8f774e09f68400d0fcc01192f3f3a5e1.mp3str::
-missSFX.MP3::AudioStreamMP3::6741372639063933314::1780330194::1780330194::1::::<><><>0<>0<>d238517eea23f7e1599ba516bb05b87f<>res://.godot/imported/missSFX.MP3-0358e5a29babc241d6e5951c5c9da59e.mp3str::
+::res://::1780857907
+icon.svg::CompressedTexture2D::5113161746150655415::1780857880::1780857908::1::::<><><>0<>0<>7eb41c534106afbda340fd6ac8451971<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://canciones/::1780857880
+Osmani Garcia Ft. Pitbull, Sentato, Dayami La Musa - El Taxi (Letra_Lyrics) - neiByotsE(1).mp3::AudioStreamMP3::3091870904786789963::1780857879::1780857908::1::::<><><>0<>0<>c8a6d53150ddece0a20e39def7c6634c<>res://.godot/imported/Osmani Garcia Ft. Pitbull, Sentato, Dayami La Musa - El Taxi (Letra_Lyrics) - neiByotsE(1).mp3-37c9943bbfd5fb0fa7746f95003e476a.mp3str::
+Pitbull - Fireball (Lyrics) ft. John Ryan - Dan Music.mp3::AudioStreamMP3::528440592986970620::1780857879::1780857908::1::::<><><>0<>0<>50dd8bf5cf47d408d6cef6bd9e0a0fb9<>res://.godot/imported/Pitbull - Fireball (Lyrics) ft. John Ryan - Dan Music.mp3-af67dd362c14dafff6432dc27038d60e.mp3str::
+Pitbull - Hey Baby (Drop It To The Floor) ft. T-Pain (Lyrics) - 7clouds.mp3::AudioStreamMP3::7129030268708850961::1780857879::1780857908::1::::<><><>0<>0<>5fce8666d31eef5dd12ec3d0f0b5aeb3<>res://.godot/imported/Pitbull - Hey Baby (Drop It To The Floor) ft. T-Pain (Lyrics) - 7clouds.mp3-51aed4be8f8905f7b8319bb3f5a4504d.mp3str::
+Pitbull - I Know You Want Me (Calle Ocho) - ItalianHype.mp3::AudioStreamMP3::4810892411728925574::1780857880::1780857908::1::::<><><>0<>0<>0ea177e8d5e4fb27e357d81f3b1b6956<>res://.godot/imported/Pitbull - I Know You Want Me (Calle Ocho) - ItalianHype.mp3-db979d249f2b0d2068234e9ff58e6044.mp3str::
+Pitbull - Timber (Lyrics) ft. Keha - CountryHype.mp3::AudioStreamMP3::1069464915110515914::1780857880::1780857908::1::::<><><>0<>0<>bee42720bbdb0e2310f2d3d1d2ab130c<>res://.godot/imported/Pitbull - Timber (Lyrics) ft. Keha - CountryHype.mp3-277919c3591c088ba66dc4044e799196.mp3str::
+::res://fotos/::1780857880
+6f75d61db668dfa238635caf7f58176b-removebg-preview.png::CompressedTexture2D::8172543799627895889::1780857880::1780857908::1::::<><><>0<>0<>b75a785bf68ccb51486ce5bc8334b955<>res://.godot/imported/6f75d61db668dfa238635caf7f58176b-removebg-preview.png-00ced8ac9d3fdfa4563bc7ade17b120a.ctex::
+334412.jpg::CompressedTexture2D::5802869250954621920::1780857880::1780857908::1::::<><><>0<>0<>0a9af49329204a27b432ebc94e1c0ddf<>res://.godot/imported/334412.jpg-26f68d3f14cf1a5133bfbe739ea84f9d.ctex::
+ab67616d0000b2732ffc2c580b6595a3e675a730.jpeg::CompressedTexture2D::8365891388252370432::1780857880::1780857908::1::::<><><>0<>0<>7c50edc6b1a119bbedc757eae3646993<>res://.godot/imported/ab67616d0000b2732ffc2c580b6595a3e675a730.jpeg-d8122a1d0bbc907f4b25a30501dbd36e.ctex::
+ab67616d0000b2733f4358309dd9329a1f61cb5a.jpeg::CompressedTexture2D::418336326553702747::1780857880::1780857908::1::::<><><>0<>0<>2e45c0eee9216e40dbbb2a6a08bc2fb2<>res://.godot/imported/ab67616d0000b2733f4358309dd9329a1f61cb5a.jpeg-254d05f065703ac4d7dd7719742948a1.ctex::
+images-removebg-preview(1).png::CompressedTexture2D::8393847900879110283::1780857880::1780857908::1::::<><><>0<>0<>7c4ff1b3d5af175a29a716c37fc2354e<>res://.godot/imported/images-removebg-preview(1).png-78f34e0babce21cf03654c3eab58d27a.ctex::
+pitbull.jpg::CompressedTexture2D::2103612821559643081::1780857880::1780857908::1::::<><><>0<>0<>3806f9a0bd45f5a8694b2e60aeada3b2<>res://.godot/imported/pitbull.jpg-9d1d12f4aa17631fc8287d19eba51c95.ctex::
+Pitbull_-_Fireball_(feat._John_Ryan).png::CompressedTexture2D::1564973096917685338::1780857880::1780857908::1::::<><><>0<>0<>1100e994e3acf7ac71bba614094b4bf0<>res://.godot/imported/Pitbull_-_Fireball_(feat._John_Ryan).png-e745c35e93a4a859ddacae1020d72556.ctex::
+Pitbull_i_know_you_want_me_cover.jpg::CompressedTexture2D::6158361633161707395::1780857880::1780857908::1::::<><><>0<>0<>7d0ddd573fdb9614a7cd7cc5d3926b68<>res://.godot/imported/Pitbull_i_know_you_want_me_cover.jpg-1845ff49e0546e7b60b27f70882500e9.ctex::
+::res://scenes/::1780857880
+conductor.tscn::PackedScene::1023601730391724377::1780857880::0::1::::<><><>0<>0<><>::uid://dep27cjcoyitx::::res://scripts/conductor.gd
+hitZones.tscn::PackedScene::6430941599403103418::1780857880::0::1::::<><><>0<>0<><>::uid://c2nry8r1b1qx8::::res://scripts/hit_zones.gd<>uid://5y24benh4njx::::res://scenes/note.tscn
+level.tscn::PackedScene::286109770485675015::1780857880::0::1::::<><><>0<>0<><>::uid://df2ow71pevv2g::::res://scripts/level.gd<>uid://cxvgwy4p7jnio::::res://scenes/hitZones.tscn<>uid://k2oj1ui7wofa::::res://scenes/noteSpawner.tscn<>uid://bt587hrsdq0l6::::res://sfx/hitSFX.MP3<>uid://c3btomlr1881c::::res://sfx/missSFX.MP3
+menu.tscn::PackedScene::1049694675163156570::1780857880::0::1::::<><><>0<>0<><>::uid://dtuuiwadnvbup::::res://scripts/menu.gd<>uid://48agwm45f2un::::res://fotos/pitbull.jpg<>uid://c8tmc7r6qrinp::::res://canciones/Pitbull - Hey Baby (Drop It To The Floor) ft. T-Pain (Lyrics) - 7clouds.mp3<>uid://rih67g7l6bcb::::res://sfx/dale_1.mp3
+menuNiveles.tscn::PackedScene::2329140788132484364::1780857880::0::1::::<><><>0<>0<><>::uid://dcy7i6frqbm7i::::res://scripts/menuNiveles.gd<>uid://cow7n5rv5ydvk::::res://fotos/334412.jpg<>uid://doo3uqlam68cr::::res://fotos/6f75d61db668dfa238635caf7f58176b-removebg-preview.png<>uid://wkc44jfr8mqs::::res://fotos/Pitbull_-_Fireball_(feat._John_Ryan).png<>uid://ct0fk0x3jba2v::::res://fotos/Pitbull_i_know_you_want_me_cover.jpg<>uid://drgrakjrl7xxg::::res://fotos/ab67616d0000b2732ffc2c580b6595a3e675a730.jpeg<>uid://f7v65sf5f3rb::::res://fotos/ab67616d0000b2733f4358309dd9329a1f61cb5a.jpeg<>uid://rih67g7l6bcb::::res://sfx/dale_1.mp3
+note.tscn::PackedScene::2156901581370080501::1780857880::0::1::::<><><>0<>0<><>::uid://5y1srtdtrnp2::::res://scripts/note.gd
+noteSpawner.tscn::PackedScene::758494142694131602::1780857880::0::1::::<><><>0<>0<><>::uid://n6r7esdlusbd::::res://scripts/note_spawner.gd<>uid://5y24benh4njx::::res://scenes/note.tscn
+::res://scripts/::1780857880
+conductor.gd::GDScript::7472679715212453341::1780857880::0::1::::<>AudioStreamPlayer2D<><>0<>0<><>::
+hit_zones.gd::GDScript::6695853865062529359::1780857880::0::1::::<>Node2D<><>0<>0<><>::
+level.gd::GDScript::7566835515593563960::1780857880::0::1::::<>Node2D<><>0<>0<><>::
+menu.gd::GDScript::8535367417157891475::1780857880::0::1::::<>Control<><>0<>0<><>::
+menuNiveles.gd::GDScript::7351143671314282976::1780857880::0::1::::<>Control<><>0<>0<><>::
+niveles.gd::GDScript::5898656445241649563::1780857880::0::1::::niveles<>Resource<><>0<>0<><>::
+note.gd::GDScript::2156822083751239077::1780857880::0::1::::<>Area2D<><>0<>0<><>::
+note_spawner.gd::GDScript::977540250003953565::1780857880::0::1::::<>Node2D<><>0<>0<><>::
+::res://sfx/::1780857880
+dale_1.mp3::AudioStreamMP3::1210207433925329777::1780857880::1780857908::1::::<><><>0<>0<>a2d870fe815b72678b9f8d6bcfcb1ff8<>res://.godot/imported/dale_1.mp3-ae51ff32b15b066f2950fc5102380991.mp3str::
+hitSFX.MP3::AudioStreamMP3::3784001246351390505::1780857880::1780857908::1::::<><><>0<>0<>223833cee3837e4876940cb9b1c480c9<>res://.godot/imported/hitSFX.MP3-8f774e09f68400d0fcc01192f3f3a5e1.mp3str::
+missSFX.MP3::AudioStreamMP3::6741372639063933314::1780857880::1780857908::1::::<><><>0<>0<>d238517eea23f7e1599ba516bb05b87f<>res://.godot/imported/missSFX.MP3-0358e5a29babc241d6e5951c5c9da59e.mp3str::

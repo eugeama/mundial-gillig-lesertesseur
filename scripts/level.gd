@@ -1,7 +1,10 @@
 extends Node2D
 
-@onready var noteSpawner = $NoteSpawner
-@onready var hitZones = $HitZones
+@onready var noteSpawner= $NoteSpawner
+@onready var hitZones= $HitZones
+
+var puntajeF=0
+var comboF=0
 
 const LANE_KEYS = {
 	"dKey": "notaD",
@@ -38,7 +41,8 @@ func checkHit(key: String):
 	
 	for nota in overlapping:
 		if nota.carril == carril:
-			calcularPuntaje(nota.puntaje(zone))
+			puntajeF+=nota.puntaje(zone)
+			comboF+=1
 			nota.queue_free()
 			$hitSFX.play()
 			return
@@ -46,11 +50,8 @@ func checkHit(key: String):
 func checkMiss():
 	for child in noteSpawner.get_children():
 		if child is Node2D and child.position.y > get_viewport_rect().size.y + 5:
-			print("checkMiss() -> MISS")
+			comboF=0
+			print("combo: ", comboF)
 			$missSFX.play()
 			child.queue_free()
-			
-func calcularPuntaje(puntaje: float):
-	pass #me falta hacer el metodo pero lo hago el finde bue pero basicamente es un coso que te calcula combo 
-	#y te va sumando puntatje. para no teener todo en checkhit. t digo por si te dan ganas de hacerlo euugew
 	

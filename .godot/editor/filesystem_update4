@@ -1,2 +1,10 @@
-res://scenes/noteSpawner.tscn
+res://scenes/level.tscn
+res://scenes/note.tscn
+res://scripts/note.gd
 res://scripts/level.gd
+res://scenes/hitZones.tscn
+res://scripts/note_spawner.gd
+res://scripts/niveles.gd
+res://scripts/conductor.gd
+res://scripts/menuNiveles.gd
+res://scenes/terminar.tscn
