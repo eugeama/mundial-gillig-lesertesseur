@@ -68,6 +68,7 @@ text = "Salir"
 
 [node name="fondo" type="AudioStreamPlayer" parent="." unique_id=484070142]
 stream = ExtResource("2_con2f")
+volume_db = -18.571
 autoplay = true
 
 [node name="dale" type="AudioStreamPlayer" parent="." unique_id=1615065469]

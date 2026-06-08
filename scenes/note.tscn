@@ -11,13 +11,16 @@ size = Vector2(40, 40)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_njo4t"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t3yvt"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+corner_detail = 20
+
 [node name="Note" type="Area2D" unique_id=598540474]
 script = ExtResource("1_t3yvt")
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1408016082]
-offset_right = 40.0
-offset_bottom = 40.0
-scale = Vector2(3, 3)
 
 [node name="barely" type="CollisionShape2D" parent="." unique_id=573823143]
 position = Vector2(60.000008, 60)
@@ -38,6 +41,12 @@ shape = SubResource("RectangleShape2D_43c4j")
 debug_color = Color(0, 0.37688804, 0.9158007, 0.41960785)
 
 [node name="perfect" type="CollisionShape2D" parent="." unique_id=1106920076]
-position = Vector2(60, 60)
+position = Vector2(60, 60.999996)
 scale = Vector2(2.016125, 2.009693)
 shape = SubResource("RectangleShape2D_njo4t")
+
+[node name="ColorRect" type="Panel" parent="." unique_id=153287195]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(3, 3)
+theme_override_styles/panel = SubResource("StyleBoxFlat_t3yvt")

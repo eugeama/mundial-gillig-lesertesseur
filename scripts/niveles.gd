@@ -14,20 +14,20 @@ const NIVELES= {
 		"bpm": 127,
 		"medida": 4,
 		"cancion":"res://canciones/Pitbull - I Know You Want Me (Calle Ocho) - ItalianHype.mp3",
-		"tiempo": 235
+		"tiempo": 238
 	},
 	"timber": {
 		"nombre": "timber",
 		"bpm": 130,
 		"medida": 4,
 		"cancion":"res://canciones/Pitbull - Timber (Lyrics) ft. Keha - CountryHype.mp3",
-		"tiempo": 205
+		"tiempo": 206
 	},
 	"el_taxi": {
 		"nombre": "el taxi",
 		"bpm": 95,
 		"medida": 4,
 		"cancion":"res://canciones/Osmani Garcia Ft. Pitbull, Sentato, Dayami La Musa - El Taxi (Letra_Lyrics) - neiByotsE(1).mp3",
-		"tiempo": 249
+		"tiempo": 323
 	}
 }

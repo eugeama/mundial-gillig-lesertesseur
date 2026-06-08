@@ -43,31 +43,6 @@ offset_bottom = 40.0
 scale = Vector2(28.759998, 16.199999)
 theme_override_styles/panel = SubResource("StyleBoxTexture_thjpi")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1073429523]
-layout_mode = 0
-offset_left = 345.99997
-offset_top = 353.0
-offset_right = 703.08923
-offset_bottom = 457.0
-scale = Vector2(1.333, 2)
-theme_override_constants/separation = 34
-
-[node name="Button" type="Button" parent="VBoxContainer" unique_id=965907425]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = SubResource("StyleBoxFlat_ecjqt")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_bfdyb")
-theme_override_styles/hover = SubResource("StyleBoxFlat_0lo2p")
-text = "volver al menú principal"
-
-[node name="Button2" type="Button" parent="VBoxContainer" unique_id=421535990]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = SubResource("StyleBoxFlat_ecjqt")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_bfdyb")
-theme_override_styles/hover = SubResource("StyleBoxFlat_0lo2p")
-text = "Elegir otro nivel"
-
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1399328768]
 layout_mode = 0
 offset_left = 348.0
@@ -88,5 +63,30 @@ layout_mode = 2
 [node name="LabelComboF" type="Label" parent="VBoxContainer2" unique_id=1835820381]
 layout_mode = 2
 
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1073429523]
+layout_mode = 0
+offset_left = 345.99997
+offset_top = 353.0
+offset_right = 703.08923
+offset_bottom = 457.0
+scale = Vector2(1.333, 2)
+theme_override_constants/separation = 34
+
+[node name="elegirNivel" type="Button" parent="VBoxContainer" unique_id=421535990]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_ecjqt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bfdyb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0lo2p")
+text = "Elegir otro nivel"
+
+[node name="menuPrincipal" type="Button" parent="VBoxContainer" unique_id=928694414]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_ecjqt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bfdyb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0lo2p")
+text = "Menú principal"
+
+[connection signal="pressed" from="VBoxContainer/elegirNivel" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/menuPrincipal" to="." method="_on_menu_principal_pressed"]

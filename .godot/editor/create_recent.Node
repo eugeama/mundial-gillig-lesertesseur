@@ -1,14 +1,14 @@
+Panel
+VideoStreamPlayer
+Button
 VBoxContainer
 Label
-Button
 AudioStreamPlayer
 Control
 TextureButton
 HBoxContainer
-Panel
 Timer
 AudioStreamPlayer2D
 VSeparator
 CollisionShape2D
 Area2D
-ColorRect

@@ -2,32 +2,209 @@
 
 [ext_resource type="Script" uid="uid://df2ow71pevv2g" path="res://scripts/level.gd" id="1_2q6dc"]
 [ext_resource type="Script" uid="uid://c2nry8r1b1qx8" path="res://scripts/hit_zones.gd" id="2_2r41h"]
-[ext_resource type="PackedScene" uid="uid://5y24benh4njx" path="res://scenes/note.tscn" id="3_klq6b"]
+[ext_resource type="VideoStream" uid="uid://dp2he12w16e25" path="res://canciones/ezgif-3bb05b03ad0b59aa.ogv" id="2_klq6b"]
+[ext_resource type="Script" uid="uid://5y1srtdtrnp2" path="res://scripts/note.gd" id="3_2r41h"]
 [ext_resource type="PackedScene" uid="uid://k2oj1ui7wofa" path="res://scenes/noteSpawner.tscn" id="3_w8frs"]
 [ext_resource type="AudioStream" uid="uid://bt587hrsdq0l6" path="res://sfx/hitSFX.MP3" id="4_mx8sn"]
 [ext_resource type="AudioStream" uid="uid://c3btomlr1881c" path="res://sfx/missSFX.MP3" id="5_ppgk2"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_olg7q"]
+bg_color = Color(0.2509804, 0.2509804, 0.2509804, 0.5372549)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t3yvt"]
+size = Vector2(40, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bnk6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_43c4j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_njo4t"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2r41h"]
+bg_color = Color(0.3688904, 0.6502324, 0.7055984, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_klq6b"]
+bg_color = Color(0.18655375, 0.3894778, 0.5688728, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b121j"]
+bg_color = Color(0.869201, 0.25979573, 0.26582003, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8c41q"]
+bg_color = Color(0.8731918, 0.7016693, 0.35608554, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
 [node name="level" type="Node2D" unique_id=1522307892]
 script = ExtResource("1_2q6dc")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=909503013]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 482.0
+offset_bottom = 271.0
+scale = Vector2(2.3910203, 2.3945677)
+stream = ExtResource("2_klq6b")
+autoplay = true
+loop = true
+
+[node name="Panel" type="Panel" parent="." unique_id=69437717]
+offset_right = 40.0
+offset_bottom = 68.845024
+scale = Vector2(28.933636, 9.45602)
+theme_override_styles/panel = SubResource("StyleBoxFlat_olg7q")
 
 [node name="HitZones" type="Node2D" parent="." unique_id=1552270386]
 script = ExtResource("2_2r41h")
 
-[node name="notaD" parent="HitZones" unique_id=598540474 instance=ExtResource("3_klq6b")]
+[node name="notaD" type="Area2D" parent="HitZones" unique_id=598540474]
 position = Vector2(144, 467)
+script = ExtResource("3_2r41h")
 SPEED = 0
 
-[node name="notaF" parent="HitZones" unique_id=1727811052 instance=ExtResource("3_klq6b")]
+[node name="barely" type="CollisionShape2D" parent="HitZones/notaD" unique_id=573823143]
+position = Vector2(60.000008, 60)
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_t3yvt")
+debug_color = Color(0.8627451, 0, 0, 0.41960785)
+
+[node name="good" type="CollisionShape2D" parent="HitZones/notaD" unique_id=1307492079]
+position = Vector2(60, 60)
+scale = Vector2(4.912996, 4.7972755)
+shape = SubResource("RectangleShape2D_1bnk6")
+debug_color = Color(0.8269499, 0.39701223, 0, 0.41960785)
+
+[node name="great" type="CollisionShape2D" parent="HitZones/notaD" unique_id=508568699]
+position = Vector2(60, 60)
+scale = Vector2(3.359999, 3.5117092)
+shape = SubResource("RectangleShape2D_43c4j")
+debug_color = Color(0, 0.37688804, 0.9158007, 0.41960785)
+
+[node name="perfect" type="CollisionShape2D" parent="HitZones/notaD" unique_id=1106920076]
+position = Vector2(60, 60.999996)
+scale = Vector2(2.016125, 2.009693)
+shape = SubResource("RectangleShape2D_njo4t")
+
+[node name="ColorRect" type="Panel" parent="HitZones/notaD" unique_id=153287195]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(3, 3)
+theme_override_styles/panel = SubResource("StyleBoxFlat_2r41h")
+
+[node name="notaF" type="Area2D" parent="HitZones" unique_id=1727811052]
 position = Vector2(393, 467)
+script = ExtResource("3_2r41h")
 SPEED = 0
 
-[node name="notaJ" parent="HitZones" unique_id=261411264 instance=ExtResource("3_klq6b")]
+[node name="barely" type="CollisionShape2D" parent="HitZones/notaF" unique_id=1839568263]
+position = Vector2(60.000008, 60)
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_t3yvt")
+debug_color = Color(0.8627451, 0, 0, 0.41960785)
+
+[node name="good" type="CollisionShape2D" parent="HitZones/notaF" unique_id=518093126]
+position = Vector2(60, 60)
+scale = Vector2(4.912996, 4.7972755)
+shape = SubResource("RectangleShape2D_1bnk6")
+debug_color = Color(0.8269499, 0.39701223, 0, 0.41960785)
+
+[node name="great" type="CollisionShape2D" parent="HitZones/notaF" unique_id=502743025]
+position = Vector2(60, 60)
+scale = Vector2(3.359999, 3.5117092)
+shape = SubResource("RectangleShape2D_43c4j")
+debug_color = Color(0, 0.37688804, 0.9158007, 0.41960785)
+
+[node name="perfect" type="CollisionShape2D" parent="HitZones/notaF" unique_id=127453837]
+position = Vector2(60, 60.999996)
+scale = Vector2(2.016125, 2.009693)
+shape = SubResource("RectangleShape2D_njo4t")
+
+[node name="ColorRect" type="Panel" parent="HitZones/notaF" unique_id=652375580]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(3, 3)
+theme_override_styles/panel = SubResource("StyleBoxFlat_klq6b")
+
+[node name="notaJ" type="Area2D" parent="HitZones" unique_id=261411264]
 position = Vector2(646, 467)
+script = ExtResource("3_2r41h")
 SPEED = 0
 
-[node name="notaK" parent="HitZones" unique_id=589798924 instance=ExtResource("3_klq6b")]
+[node name="barely" type="CollisionShape2D" parent="HitZones/notaJ" unique_id=1006629800]
+position = Vector2(60.000008, 60)
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_t3yvt")
+debug_color = Color(0.8627451, 0, 0, 0.41960785)
+
+[node name="good" type="CollisionShape2D" parent="HitZones/notaJ" unique_id=2008619488]
+position = Vector2(60, 60)
+scale = Vector2(4.912996, 4.7972755)
+shape = SubResource("RectangleShape2D_1bnk6")
+debug_color = Color(0.8269499, 0.39701223, 0, 0.41960785)
+
+[node name="great" type="CollisionShape2D" parent="HitZones/notaJ" unique_id=902575509]
+position = Vector2(60, 60)
+scale = Vector2(3.359999, 3.5117092)
+shape = SubResource("RectangleShape2D_43c4j")
+debug_color = Color(0, 0.37688804, 0.9158007, 0.41960785)
+
+[node name="perfect" type="CollisionShape2D" parent="HitZones/notaJ" unique_id=648840331]
+position = Vector2(60, 60.999996)
+scale = Vector2(2.016125, 2.009693)
+shape = SubResource("RectangleShape2D_njo4t")
+
+[node name="ColorRect" type="Panel" parent="HitZones/notaJ" unique_id=1196215350]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(3, 3)
+theme_override_styles/panel = SubResource("StyleBoxFlat_b121j")
+
+[node name="notaK" type="Area2D" parent="HitZones" unique_id=589798924]
 position = Vector2(888, 467)
+script = ExtResource("3_2r41h")
 SPEED = 0
+
+[node name="barely" type="CollisionShape2D" parent="HitZones/notaK" unique_id=1362429196]
+position = Vector2(60.000008, 60)
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_t3yvt")
+debug_color = Color(0.8627451, 0, 0, 0.41960785)
+
+[node name="good" type="CollisionShape2D" parent="HitZones/notaK" unique_id=104847073]
+position = Vector2(60, 60)
+scale = Vector2(4.912996, 4.7972755)
+shape = SubResource("RectangleShape2D_1bnk6")
+debug_color = Color(0.8269499, 0.39701223, 0, 0.41960785)
+
+[node name="great" type="CollisionShape2D" parent="HitZones/notaK" unique_id=1482865809]
+position = Vector2(60, 60)
+scale = Vector2(3.359999, 3.5117092)
+shape = SubResource("RectangleShape2D_43c4j")
+debug_color = Color(0, 0.37688804, 0.9158007, 0.41960785)
+
+[node name="perfect" type="CollisionShape2D" parent="HitZones/notaK" unique_id=648448128]
+position = Vector2(60, 60.999996)
+scale = Vector2(2.016125, 2.009693)
+shape = SubResource("RectangleShape2D_njo4t")
+
+[node name="ColorRect" type="Panel" parent="HitZones/notaK" unique_id=908640148]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(3, 3)
+theme_override_styles/panel = SubResource("StyleBoxFlat_8c41q")
 
 [node name="NoteSpawner" parent="." unique_id=1503950154 instance=ExtResource("3_w8frs")]
 

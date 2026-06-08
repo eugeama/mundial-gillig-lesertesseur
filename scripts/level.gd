@@ -62,7 +62,7 @@ func checkMiss():
 func _on_terminar_nivel() -> void:
 	PuntosYCombos.puntos= puntajeF
 	ultimoCombo= comboF
-	PuntosYCombos.puntos= ultimoCombo
+	PuntosYCombos.combos= ultimoCombo
 	get_tree().change_scene_to_file("res://scenes/terminar.tscn")
 	
 func mejorCombo()-> void:
