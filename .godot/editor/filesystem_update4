@@ -6,3 +6,4 @@ res://scenes/conductor.tscn
 res://scripts/conductor.gd
 res://scripts/niveles.gd
 res://scripts/menuNiveles.gd
+res://scripts/level.gd

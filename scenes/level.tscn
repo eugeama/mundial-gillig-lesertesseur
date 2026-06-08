@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://k2oj1ui7wofa" path="res://scenes/noteSpawner.tscn" id="3_w8frs"]
 [ext_resource type="AudioStream" uid="uid://bt587hrsdq0l6" path="res://sfx/hitSFX.MP3" id="4_mx8sn"]
 [ext_resource type="AudioStream" uid="uid://c3btomlr1881c" path="res://sfx/missSFX.MP3" id="5_ppgk2"]
-[ext_resource type="FontFile" uid="uid://dyte53jydhl3c" path="res://font/bebas_neue/BebasNeue-Regular.otf" id="8_b121j"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_olg7q"]
 bg_color = Color(0.2509804, 0.2509804, 0.2509804, 0.5372549)
@@ -221,10 +220,6 @@ offset_bottom = 40.0
 
 [node name="LabelPuntos" type="Label" parent="VBoxContainer" unique_id=1700197344]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("8_b121j")
-theme_override_font_sizes/font_size = 30
 
 [node name="LabelCombo" type="Label" parent="VBoxContainer" unique_id=1060073725]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("8_b121j")
-theme_override_font_sizes/font_size = 30

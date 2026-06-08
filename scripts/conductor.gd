@@ -16,11 +16,15 @@ signal medidaMandar(position)
 signal terminarNivel()
 
 func elegirNivel(nivel: String) -> void:
+	bpm= 0
+	medidas= 0
 	posicion= 0.0
 	posicion_en_beats= 1
+	segundos_beat= 0
 	ultimo_beat= 0
-	beat_antes_empezar = 0
+	beat_antes_empezar= 0
 	medida= 1
+	tiempo= 0
 	
 	var niveles=preload("res://scripts/niveles.gd")
 	var nivelesElegir = niveles.new()  
