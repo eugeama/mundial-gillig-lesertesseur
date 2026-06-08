@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bysjj0jv5jy00" path="res://scripts/terminar.gd" id="1_emwh5"]
 [ext_resource type="Texture2D" uid="uid://48agwm45f2un" path="res://fotos/pitbull.jpg" id="2_8oo2o"]
+[ext_resource type="FontFile" uid="uid://dyte53jydhl3c" path="res://font/bebas_neue/BebasNeue-Regular.otf" id="3_8oo2o"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_thjpi"]
 texture = ExtResource("2_8oo2o")
@@ -54,6 +55,7 @@ theme_override_constants/separation = 34
 
 [node name="Button" type="Button" parent="VBoxContainer" unique_id=965907425]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_8oo2o")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_ecjqt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_bfdyb")
@@ -62,6 +64,7 @@ text = "reintentar"
 
 [node name="Button2" type="Button" parent="VBoxContainer" unique_id=421535990]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_8oo2o")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_ecjqt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_bfdyb")

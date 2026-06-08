@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dtuuiwadnvbup" path="res://scripts/menu.gd" id="1_mhnvy"]
 [ext_resource type="Texture2D" uid="uid://48agwm45f2un" path="res://fotos/pitbull.jpg" id="1_yqeox"]
 [ext_resource type="AudioStream" uid="uid://c8tmc7r6qrinp" path="res://canciones/Pitbull - Hey Baby (Drop It To The Floor) ft. T-Pain (Lyrics) - 7clouds.mp3" id="2_con2f"]
+[ext_resource type="FontFile" uid="uid://dyte53jydhl3c" path="res://font/bebas_neue/BebasNeue-Regular.otf" id="3_4ytvr"]
 [ext_resource type="AudioStream" uid="uid://rih67g7l6bcb" path="res://sfx/dale_1.mp3" id="3_mhnvy"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vjb58"]
@@ -52,6 +53,7 @@ theme_override_constants/separation = 30
 
 [node name="Button" type="Button" parent="VBoxContainer" unique_id=160505417]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4ytvr")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_con2f")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_mhnvy")
@@ -60,6 +62,7 @@ text = "Empezar"
 
 [node name="Button2" type="Button" parent="VBoxContainer" unique_id=1125495652]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4ytvr")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_con2f")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_mhnvy")
